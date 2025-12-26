@@ -1,0 +1,15 @@
+[project]
+name = "realestate-collector"
+version = "0.1.0"
+description = "부동산 실거래가 데이터 수집 프로젝트"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jupyter>=1.0.0",
+    "pandas>=2.0.0",
+    "requests>=2.31.0",
+    "openpyxl>=3.1.0",
+    "publicdatareader>=1.1.0",
+    "python-dateutil>=2.9.0.post0",
+    "python-dotenv>=1.2.1",
+]
