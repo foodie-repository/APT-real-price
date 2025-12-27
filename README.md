@@ -76,7 +76,8 @@ jupyter notebook
 ├── Archive/                        # 참고용 노트북
 │   └── 실거래가 수집 (매매).ipynb
 └── 매매/                           # 매매 실거래가 데이터 수집
-    └── apt-transaction.py          # 아파트 매매 데이터 수집 스크립트
+    ├── apt-transaction.py          # 아파트 매매 데이터 수집 스크립트
+    └── output/                     # CSV 출력 폴더 (자동 생성)
 ```
 
 ## 주요 명령어
@@ -115,7 +116,8 @@ uv run python 매매/apt-transaction.py
 2. 최근 4개월 기간 자동 계산
 3. 모든 시군구에 대해 데이터 수집
 4. 시도명/시군구명 정보 추가
-5. pandas DataFrame으로 반환
+5. CSV 파일로 저장 (`매매/output/아파트_매매_실거래가_YYYYMM_YYYYMM.csv`)
+6. pandas DataFrame으로 반환
 
 ### Jupyter Notebook 작업
 
